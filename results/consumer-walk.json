@@ -1,0 +1,57 @@
+{
+  "documents": 3056,
+  "versions": {
+    "1.2": {
+      "totalNodes": 26623,
+      "reached": 26623,
+      "childrenReached": 14855,
+      "childrenShare": 0.5579761860045825,
+      "missing": 0,
+      "schemaSlotNames": [
+        "blocks",
+        "caption",
+        "cells",
+        "children",
+        "content",
+        "fallback",
+        "inline",
+        "items",
+        "locator",
+        "new",
+        "old",
+        "pairs",
+        "prefix",
+        "rows",
+        "shortCaption",
+        "suffix",
+        "target",
+        "title"
+      ]
+    },
+    "2.0": {
+      "totalNodes": 28508,
+      "reached": 28508,
+      "childrenReached": 27523,
+      "childrenShare": 0.9654482952153781,
+      "missing": 0,
+      "schemaSlotNames": [
+        "annotation",
+        "base",
+        "caption",
+        "children",
+        "columns",
+        "fallback",
+        "locator",
+        "new",
+        "old",
+        "pairs",
+        "prefix",
+        "short",
+        "slots",
+        "suffix",
+        "title"
+      ]
+    }
+  },
+  "failures": []
+}

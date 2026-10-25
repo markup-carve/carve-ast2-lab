@@ -3795,7 +3795,8 @@
           }
         },
         "blockImage": {
-          "type": "boolean"
+          "const": true,
+          "description": "Written only on a paragraph the promotion stage promoted. With `blockImagePromotion` in the root `stages`, an absent field means the paragraph was not promoted; without it, absence says nothing."
         },
         "attrs": {
           "$ref": "#/$defs/attrs"

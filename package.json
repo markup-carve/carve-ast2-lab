@@ -10,9 +10,12 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "vitest run test/",
     "baseline": "node --experimental-strip-types --no-warnings src/baseline.ts",
-    "measure2": "node --experimental-strip-types --no-warnings src/measure2.ts"
+    "measure2": "node --experimental-strip-types --no-warnings src/measure2.ts",
+    "size": "node --experimental-strip-types --no-warnings src/size-breakdown.ts",
+    "consumers": "node --experimental-strip-types --no-warnings src/consumers/measure.ts && node --experimental-strip-types --no-warnings src/consumers/measure-formats.ts",
+    "docx:soffice": "node --experimental-strip-types --no-warnings src/consumers/soffice.ts"
   },
   "dependencies": {
     "@markup-carve/carve": "0.1.14",
