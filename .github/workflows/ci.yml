@@ -25,7 +25,8 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
-      - name: Baseline still matches the committed result
+      - name: Measurements still match the committed results
         run: |
           npm run -s baseline
+          npm run -s measure2
           git diff --exit-code results/

@@ -7,8 +7,8 @@ A place to try the AST 2.0 design against real trees before it goes into the spe
 ## What it does
 
 1. **Baseline.** Runs the pinned corpus (3,056 documents in `spec/tests/corpus`) through carve-js 0.1.14 and measures the 1.2 contract: schema validity, whether `fmt` written from the serialized tree matches `fmt` from the parse, tree size and node count. Result: `results/baseline-1.2.json`.
-2. **Draft 2.0 schema** (planned): `schema/ast-schema-2.0.json`, with #3262 and #3598 applied.
-3. **Upgrader and downgrader** (planned): 1.2 to 2.0 and back, so the same measurements run on 2.0 trees, including the round trip `fmt` depends on.
+2. **Draft 2.0 schema:** `schema/ast-schema-2.0.json`, with #3262 and #3598 applied. Every choice the tickets left open is a "draft" entry in DECISIONS.md.
+3. **Upgrader and downgrader:** `src/upgrade.ts` and `src/downgrade.ts`, 1.2 to 2.0 and back. `npm run measure2` runs the corpus through both: validity under each schema, an exact round trip, `fmt` from the downgraded tree, and size. Result: `results/measure-2.0-draft.json`.
 4. **Trial consumers** (planned): a generic walker, a minimal DOCX table and caption writer, the Pandoc JSON mapping.
 
 Every open design question gets a measurement and an entry in [DECISIONS.md](DECISIONS.md). Those entries are the evidence for the spec PR.
@@ -25,6 +25,7 @@ git submodule update --init
 npm ci
 npm test
 npm run baseline
+npm run measure2
 ```
 
 ## License

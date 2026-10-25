@@ -1,0 +1,17 @@
+{
+  "contract": "2.0-draft",
+  "documents": 3056,
+  "schemaValid": 3056,
+  "downgradeValid": 3056,
+  "roundTripEqual": 3056,
+  "fmtEqual": 3056,
+  "totalBytes12": 3315054,
+  "totalBytes20": 3840450,
+  "totalNodes12": 26623,
+  "totalNodes20": 28508,
+  "invalid20": [],
+  "invalid12": [],
+  "roundTripMismatch": [],
+  "fmtMismatch": [],
+  "losses": []
+}
