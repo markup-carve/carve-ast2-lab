@@ -228,7 +228,6 @@ export function upgrade(tree12: Tree): Tree {
         }
         break
     }
-    if (node.type === 'paragraph' && node.blockImage === undefined) node.blockImage = false
     const ref = refs[original.type]
     if (ref) {
       move(node, ref[0], 'key')

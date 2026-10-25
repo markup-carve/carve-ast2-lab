@@ -151,3 +151,14 @@ describe('caption downgrade', () => {
     expect(downgrade(tree).losses.some((l: string) => l.endsWith('/caption/children/0/attrs'))).toBe(true)
   })
 })
+
+describe('block image flag', () => {
+  it('is written only as true', () => {
+    const tree = upgrade(toAstJson(parse('Just text.\n')) as any)
+    expect(tree.stages).toContain('blockImagePromotion')
+    expect(JSON.stringify(tree)).not.toContain('"blockImage"')
+    expect(validate20(tree)).toBe(true)
+    tree.children[0].blockImage = false
+    expect(validate20(tree)).toBe(false)
+  })
+})

@@ -1,0 +1,58 @@
+{
+  "documents": 3056,
+  "totalBytes12": 3315054,
+  "totalBytes20": 3757705,
+  "delta": 442651,
+  "causes": [
+    {
+      "cause": "paragraph blockImage",
+      "bytes": 0,
+      "share": 0
+    },
+    {
+      "cause": "cell_paragraph wrappers",
+      "bytes": 31902,
+      "share": 0.07207032176590587
+    },
+    {
+      "cause": "caption nodes",
+      "bytes": 8384,
+      "share": 0.01894042936760563
+    },
+    {
+      "cause": "table group nodes",
+      "bytes": 12213,
+      "share": 0.027590584907748995
+    },
+    {
+      "cause": "compatibility data and declaration",
+      "bytes": 4662,
+      "share": 0.010531999249973455
+    },
+    {
+      "cause": "root stages and extensions",
+      "bytes": 223892,
+      "share": 0.5057980214661212
+    },
+    {
+      "cause": "reference namespace",
+      "bytes": 20046,
+      "share": 0.04528624130522692
+    },
+    {
+      "cause": "discriminated marker spacing task",
+      "bytes": 19061,
+      "share": 0.043061011948465046
+    },
+    {
+      "cause": "renamed keys",
+      "bytes": 6247,
+      "share": 0.014112698265676571
+    }
+  ],
+  "unexplained": {
+    "bytes": 116244,
+    "share": 0.2626086917232764
+  },
+  "method": "Each ablation starts from the unmodified 2.0 tree. Overlap is retained in each cause; the remainder subtracts their sum and can be negative."
+}
