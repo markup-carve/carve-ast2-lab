@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+.vscode/
+*.swp
+
+# Scratch files, by convention `_`-prefixed.
+/_*

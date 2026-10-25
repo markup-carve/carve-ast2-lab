@@ -1,0 +1,11 @@
+{
+  "contract": "1.2",
+  "documents": 3056,
+  "schemaValid": 3056,
+  "fmtFromTree": 3056,
+  "errors": 0,
+  "totalBytes": 3315054,
+  "totalNodes": 26623,
+  "invalid": [],
+  "fmtMismatch": []
+}
